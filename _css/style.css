@@ -88,9 +88,13 @@ header a:hover {
   min-height: 400px;
   height: 100%;
   background:url('../_img/showcase1.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+          background-size: cover;
   background-origin: content-box;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+          box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
   text-align: center;
   color: #ffffff;
 }
@@ -219,6 +223,8 @@ footer {
   #showcase p {
     font-size: 16px;
   }
+
+  #informativo
 
   #informativo form {
     margin-bottom: 20px;
