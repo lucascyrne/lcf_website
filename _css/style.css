@@ -1,0 +1,239 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: ghostwhite;
+}
+
+/* Global  */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.botao_1 {
+  height: 35px;
+  background: #e8491d;
+  border: none;
+  padding: 0 20px 0 20px;
+  color: #ffffff;
+}
+
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header  */
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #marca {
+  float: left;
+}
+
+header #marca h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: normal;
+}
+
+/* showcase */
+
+#showcase {
+  min-height: 400px;
+  height: 100%;
+  background:url('../_img/showcase1.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  background-origin: content-box;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* informativo  */
+
+#informativo {
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+
+#informativo h1 {
+  float: left;
+}
+
+#informativo form {
+  float: right;
+  margin-top: 15px;
+
+}
+
+#informativo input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* caixas  */
+
+#caixas {
+  margin-top: 20px;
+}
+
+#caixas .caixa {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#caixas .caixa img {
+  width: 90px;
+}
+
+/* lateral  */
+
+aside#lateral {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#lateral .mensagem input,
+aside#lateral .mensagem textarea {
+  width: 90%;
+  padding: 5px;
+
+}
+
+/* principal  */
+
+article#principal-col {
+  float: left;
+  width: 65%;
+}
+
+/* serviços  */
+
+ul#servicos li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+footer {
+   padding: 20px;
+   margin-top: 20px;
+   color: #ffffff;
+   background-color: #e8491d;
+   text-align: center;
+}
+
+/* media query  */
+
+@media(max-width: 480px ) {
+
+}
+
+@media(max-width: 768px) {
+  header #marca,
+  header nav,
+  header nav li,
+  #informativo h1,
+  #informativo form,
+  #caixas .caixa,
+  article#principal-col,
+  aside#lateral {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+
+  #showcase p {
+    font-size: 16px;
+  }
+
+  #informativo form {
+    margin-bottom: 20px;
+  }
+
+  #informativo button {
+    display: block;
+    width: 100%;
+  }
+
+  #informativo form input[type="email"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+
+}
